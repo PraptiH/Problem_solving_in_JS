@@ -13,12 +13,14 @@ const mixedArr = [
     "thanks all",
     NaN
 ];
-const trueValue = mixedArr.filter(function(e){
-    if(e) {
-        return true
-    }
-    else {
-        return false
-    }
-})
+// const trueValue = mixedArr.filter(function(e){
+//     if(e) {
+//         return true
+//     }
+//     else {
+//         return false
+//     }
+// })
+
+const trueValue = mixedArr.filter(Boolean)
 console.log(trueValue)
